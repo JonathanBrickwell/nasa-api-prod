@@ -4,6 +4,9 @@ This project was started with the intent of learning more about the Angular & it
 
 Before anything, run `npm install` to get the needed imports.
 
+The data is extracted from the Nasa API using `https://api.nasa.gov/planetary/apod?api_key=yourKEY` request.
+You can get your key by visiting : [https://api.nasa.gov/index.html#live_example] .
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
 ## Development server
