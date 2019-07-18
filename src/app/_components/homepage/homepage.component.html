@@ -32,7 +32,8 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="image-container">
-            <img class="img-fluid" src="{{astronomyPictureData?.url}}" alt="Astronomy picture of the day">
+            <img *ngIf="astronomyPictureData?.media_type == 'image'" class="img-fluid" src="{{astronomyPictureData?.url}}" alt="Astronomy picture of the day">
+            <iframe class="embed-responsive-item" *ngIf="astronomyPictureData?.media_type == 'video'" width="720" height="360" [src]="safeURL"></iframe>
           </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import { AstronomyPicture } from 'src/app/_models/astronomy-picture/astronomy-pi
 export class AstronomyPictureServiceService {
 
   private url = 'https://api.nasa.gov/planetary/apod?api_key=oAbFeFwglLmUTUFWWYHXm1Xy61sSZmROULa45j72';
+  //private jsonURL = './assets/json/video-test.json';
 
   constructor(private http: HttpClient) { }
 

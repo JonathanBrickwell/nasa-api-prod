@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AstronomyPictureAdapter } from 'src/app/_interfaces/astronomypictureadapter';
+import { DomSanitizer } from '@angular/platform-browser';
 
 export class AstronomyPicture {
     constructor(
