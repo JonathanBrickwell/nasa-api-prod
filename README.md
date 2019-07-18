@@ -1,4 +1,8 @@
-# NASAAPIHUB
+# Nasa API Hub
+
+This project was started with the intent of learning more about the Angular & its best practices.
+
+Before anything, run `npm install` to get the needed imports.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
