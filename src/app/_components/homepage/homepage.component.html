@@ -3,15 +3,15 @@
 <!-- Carousel area -->
 <carousel>
   <slide>
-    <img src="../../../assets/img/slide-1.jpg" alt="first slide" style="display: block; width: 100%;">
+    <img class="img-fluid" src="../../../assets/img/slide-1.jpg" alt="first slide" style="display: block; width: 100%;">
     <div class="carousel-caption d-none d-md-block">
       <h3>Welcome to Nasa API Hub</h3>
-      <p>Take a look around</p>
+      <p>v1.0</p>
     </div>
   </slide>
 </carousel>
 
-<!-- Main Content -->
+<!-- Short About Us Content -->
 <section class="py-5">
   <div class="container">
     <div class="row mb-5">
@@ -19,15 +19,22 @@
           <h1 class="font-weight-light">About us</h1>
           <p class="lead">Nasa API hub</p>
           <p class="lead">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Nasa API Hub is non profit application created for the sole purpose of exploring Nasa's open API systems & different development enviroments. It is invisioned for this application to display data served through couple of Nasa's API systems & present the data about <i>Astronomy picture of the day, Near Earth objects</i> & many more...
           </p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Astronomy Picture of The Day -->
+<section class="py-5">
+  <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="apod-description">
-            <h4 class="font-weight-bold">{{ astronomyPictureData?.title }}</h4>
-            <p class="mid-text-size">{{ astronomyPictureData?.explanation }}</p>
+            <h3 class="font-weight-bold">Astronomy picture of the day</h3>
+            <h4 class="font-weight-light"><i>{{ astronomyPictureData?.title }}</i></h4>
+            <p class="mid-size-text">{{ astronomyPictureData?.explanation }}</p>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -43,8 +50,14 @@
 <!-- Upcoming Content -->
 <section class="py-5">
     <div class="container">
-      <h1 class="font-weight-light">Upcoming Features</h1>
-      <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3 class="font-weight-bold">Upcoming Features</h3>
+            <p class="lead">In the upcoming version of this application, the version 2.0, an additional feature will be added. <br>
+            A feature which will display <i>Near Earth Objects</i>, where you can see, based on a specific date, whether there were or weren't any hazardous objects in the vicinity of the Earth, alongside with their diameter and date of passing.</p>
+            <p class="lead">In the initial release of the <i>Near Earth objects</i> feature, you will be able to see the aforementioned information based only on a predefined date, when later on, you as a user will have the ability to enter any date you want & the information will be presented to you based on the input you've provided.</p>
+        </div>
+      </div>
     </div>
 </section>
 
