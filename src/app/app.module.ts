@@ -9,6 +9,9 @@ import { FooterComponent } from './_components/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+// NGX Imports
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
