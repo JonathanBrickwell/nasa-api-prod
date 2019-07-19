@@ -20,26 +20,7 @@
   </div>
 </section>
 
-<!-- Astronomy Picture of The Day -->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="apod-description">
-            <h3 class="font-weight-bold">Astronomy picture of the day</h3>
-            <h4 *ngIf="astronomyPictureData" class="font-weight-light"><i>{{ astronomyPictureData.title }}</i></h4>
-            <p *ngIf="astronomyPictureData" class="mid-size-text">{{ astronomyPictureData.explanation }}</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="image-container">
-            <img *ngIf="astronomyPictureData?.media_type == 'image'" class="img-fluid" src="{{astronomyPictureData?.url}}" alt="Astronomy picture of the day">
-            <iframe class="embed-responsive-item" *ngIf="astronomyPictureData?.media_type == 'video'" width="720" height="360" [src]="safeURL"></iframe>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-astronomy-picture-feature></app-astronomy-picture-feature>
 
 <!-- Upcoming Content -->
 <section class="py-5">
@@ -47,9 +28,8 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h3 class="font-weight-bold">Upcoming Features</h3>
-            <p class="lead">In the upcoming version of this application, the version 2.0, an additional feature will be added. <br>
-            A feature which will display <i>Near Earth Objects</i>, where you can see, based on a specific date, whether there were or weren't any hazardous objects in the vicinity of the Earth, alongside with their diameter and date of passing.</p>
-            <p class="lead">In the initial release of the <i>Near Earth objects</i> feature, you will be able to see the aforementioned information based only on a predefined date, when later on, you as a user will have the ability to enter any date you want & the information will be presented to you based on the input you've provided.</p>
+            <p class="mid-size-text">In the upcoming version of this application, the version 2.0, an additional feature will be added. <br>
+            A feature which will display <i>Mars Rover Photos</i>, where you can see a new photo, taken by the Mars rovers, each day!</p>
         </div>
       </div>
     </div>
