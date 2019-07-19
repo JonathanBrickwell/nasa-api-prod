@@ -10,6 +10,7 @@ import { FooterComponent } from './_components/_shared/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AstronomyPictureFeatureComponent } from './_components/_features/astronomy-picture-feature/astronomy-picture-feature.component';
 import { AboutComponent } from './_components/_pages/about/about.component';
+import { MarsRoverComponent } from './_components/_features/mars-rover/mars-rover.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './_components/_pages/about/about.component';
     FooterComponent,
     HomepageComponent,
     AstronomyPictureFeatureComponent,
-    AboutComponent
+    AboutComponent,
+    MarsRoverComponent
   ],
   imports: [
     BrowserModule,
