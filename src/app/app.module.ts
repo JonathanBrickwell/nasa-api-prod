@@ -3,27 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './_components/header/header.component';
+import { HeaderComponent } from './_components/_shared/header/header.component';
 import { HomepageComponent } from './_components/homepage/homepage.component';
-import { FooterComponent } from './_components/footer/footer.component';
+import { FooterComponent } from './_components/_shared/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
-
-// NGX Imports
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AstronomyPictureFeatureComponent } from './_components/_features/astronomy-picture-feature/astronomy-picture-feature.component';
+import { AboutComponent } from './_components/_pages/about/about.component';
+import { MarsRoverComponent } from './_components/_features/mars-rover/mars-rover.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    AstronomyPictureFeatureComponent,
+    AboutComponent,
+    MarsRoverComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    CarouselModule.forRoot()
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

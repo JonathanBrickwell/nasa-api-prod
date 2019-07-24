@@ -1,0 +1,22 @@
+<!-- Astronomy Picture of The Day -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="apod-description">
+            <h3 class="font-weight-bold">Astronomy picture of the day</h3>
+            <h4 *ngIf="astronomyPictureData" class="font-weight-light"><i>{{ astronomyPictureData.title }} - {{ astronomyPictureData.date }}</i></h4>
+            <p *ngIf="astronomyPictureData" class="mid-size-text">{{ astronomyPictureData.explanation }}</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="image-container" *ngIf="astronomyPictureData?.media_type == 'image'">
+            <img class="img-fluid" src="{{astronomyPictureData?.url}}" alt="Astronomy picture of the day">
+          </div>
+          <div class="video-container" *ngIf="astronomyPictureData?.media_type == 'video'">
+            <iframe class="embed-responsive-item" width="640" height="360" [src]="safeURL"></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
