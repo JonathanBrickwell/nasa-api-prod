@@ -1,3 +1,17 @@
-<p>
-  mars-rover works!
-</p>
+<section>
+    <div class="container">
+      <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="apod-description">
+                    <h3 class="font-weight-bold">Mars Rover Photo</h3>
+                    <h4 class="font-weight-light"><i>On the day : {{ marsRover?.earth_date }}</i></h4>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="image-container">
+                <img class="img-fluid" src="{{marsRover?.img_src}}" alt="Mars Rover photo data">
+                </div>
+            </div>
+      </div>
+    </div>
+</section>
