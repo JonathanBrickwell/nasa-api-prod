@@ -23,6 +23,7 @@ export class AstronomyPictureFeatureComponent implements OnInit {
   ngOnInit() {
     this.service.getAstronomyPictureData().subscribe((astronomyPictureData: AstronomyPicture) => {
       this.astronomyPictureData = astronomyPictureData;
+      console.log(this.astronomyPictureData);
       this.sanitizingURL();
     });
   }
