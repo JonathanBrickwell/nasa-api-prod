@@ -1,0 +1,10 @@
+.nav-link {
+  font-size: 22px;
+  color: #fefefe !important;
+  background-color: transparent;
+  transition: .5s background-color; }
+
+.nav-link:hover {
+  background-color: #205DAC;
+  color: #fefefe;
+  transition: .5s background-color; }
